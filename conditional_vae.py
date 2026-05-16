@@ -177,7 +177,7 @@ cvae.compile(optimizer=tf.keras.optimizers.Adam())
 cvae.fit(
     x_train,
     y_train,
-    epochs=10,
+    epochs=100,
     batch_size=128
 )
 

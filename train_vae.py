@@ -129,7 +129,7 @@ vae.compile(optimizer=tf.keras.optimizers.Adam(),loss='mse')
 
 vae.fit(
     x_train,
-    epochs=10,
+    epochs=100,
     batch_size=128,
     validation_data=(x_test, x_test)
 )
