@@ -129,7 +129,7 @@ vae.compile(optimizer=tf.keras.optimizers.Adam(),loss='mse')
 
 vae.fit(
     x_train,
-    epochs=100,
+    epochs=300,
     batch_size=128,
     validation_data=(x_test, x_test)
 )
@@ -155,7 +155,7 @@ for i in range(16):
 
 plt.tight_layout()
 
-plt.savefig("outputs/generated_images.png")
+plt.savefig("outputs/generated_images_300.png")
 
 plt.show()
 
